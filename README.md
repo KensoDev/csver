@@ -31,3 +31,24 @@ This configuration file is paired with a query file (can be any test file) that 
 
 The reason this is another file and not inline in the JSON is that often the queries are more complex and easier to read and format when in a separate file.
 
+Here's what it looks like
+
+```
+[
+  {
+    "QueryFile": "query.sql",
+    "OutFile": "query.csv"
+  },
+  {
+    "QueryFile": "query_2.sql",
+    "OutFile", "query_2.csv"
+  }
+]
+```
+
+The `sql` file are really just a query, here's an example:
+
+```
+select id, name from users;
+```
+

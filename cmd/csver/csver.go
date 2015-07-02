@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/KensoDev/csver"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
@@ -22,6 +23,8 @@ func main() {
 		Host:   *dbHost,
 		Dbname: *dbName,
 	}
+
+	fmt.Println(dbConfig)
 
 	jsonReader := csver.JsonReader{FileName: *configurationFile}
 	config := csver.NewConfig(jsonReader.ReadFile())

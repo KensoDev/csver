@@ -2,5 +2,9 @@
   {
     "QueryFile": "query.sql",
     "OutFile": "query.csv"
+  },
+  {
+    "QueryFile": "query_2.sql",
+    "OutFile", "query_2.csv"
   }
 ]

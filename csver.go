@@ -28,6 +28,7 @@ func NewCsver(c []Config, dConfig *DBConfig) (csver *CSVer) {
 }
 
 func (c *CSVer) Execute() {
+	fmt.Printf("%v:%v@tcp(%v:3306)/%v?charset=utf8", c.dbConfig.User, c.dbConfig.Pass, c.dbConfig.Host, c.dbConfig.Dbname)
 	db, err := sql.Open("mysql", fmt.Sprintf("%v:%v@tcp(%v:3306)/%v?charset=utf8", c.dbConfig.User, c.dbConfig.Pass, c.dbConfig.Host, c.dbConfig.Dbname))
 	if err != nil {
 		panic(err)
