@@ -1,0 +1,6 @@
+[
+  {
+    "QueryFile": "fixtures/query.sql",
+    "OutFile": "fixtures/output/x.csv"
+  }
+]

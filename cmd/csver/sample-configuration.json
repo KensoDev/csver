@@ -1,0 +1,6 @@
+[
+  {
+    "QueryFile": "query.sql",
+    "OutFile": "query.csv"
+  }
+]
